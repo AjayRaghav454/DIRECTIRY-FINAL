@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Telecom Regulatory Authority of India</h1>
+    </div>
+    
+    <div class="container">
+        <input type="text" id="searchBar" placeholder="Search for names, divisions, or numbers..." onkeyup="searchDirectory()">
+        
+        <table id="directoryTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Division</th>
+                    <th>Designation</th>
+                    <th>Intercom No</th>
+                    <th>Mobile No</th>
+                    <th>Room No./Cubical No.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+        <div id="noResults" class="hidden">
+            <img src="chala-ja-chala-ja-b-sd-k.gif" alt="No results found">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
